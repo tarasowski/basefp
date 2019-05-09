@@ -14,7 +14,7 @@ module.exports = {
   map,
   filter,
   reduce,
-  apply,
+  encase,
   debug,
   recover,
 }
@@ -29,11 +29,12 @@ const user = {
 }
 
 const pipeline = pipe([
-   // apply :: DefaultValue -> (a -> b) -> DefaultValue || b
-      apply ("San Francisco") (x => x.cities[5]),
+   // encase :: DefaultValue -> (a -> b) -> DefaultValue || b
+      encase ("San Francisco") (x => x.cities[5]),
    // map :: (a -> b) -> a -> b
       map (x => x.toUpperCase()),
-      apply ("B") (str => str.charAt(0)),
+   // encase :: DefaultValue -> (a -> b) -> DefaultValue || b
+      encase ("B") (str => str.charAt(0)),
    // recover :: DefaultValue -> a -> DefaultValue || a
       recover ("Nothing")
     ]) (user),

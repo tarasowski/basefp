@@ -11,11 +11,11 @@ const getValue = check(a => {
   }
 });
 
-const apply = defaultValue => fn => data => {
+const encase = defaultValue => fn => data => {
   return getValue(() => fn(data)).cata({
     left: () => defaultValue,
     right: a => a
   })
 }
 
-module.exports = { apply }
+module.exports = { encase }

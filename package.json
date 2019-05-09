@@ -1,7 +1,7 @@
 {
   "name": "basefp",
-  "version": "0.0.1",
-  "description": "Function composition without hassle!",
+  "version": "0.0.3",
+  "description": "The hassle-free way to apply functional programming principles in JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "node ./src/index.test.js"

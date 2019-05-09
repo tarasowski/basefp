@@ -1,7 +1,7 @@
-const { apply } = require("./apply.js")
+const { encase } = require("./encase.js")
 const asyncPipe = fns => x => fns.reduce(async (v, f) => f(await v), x)
 const pipe = fns => x => fns.reduce((v, f) => f(v), x)
-const compose = fns => x => fns.reduceRight((v, f) => f(v), x)
+const compose = f => g => x => f(g(x))
 const filter = f => x => Array.isArray(x) ? x.filter(f) : x
 const map = f => x => 
   Array.isArray(x) 
@@ -23,7 +23,7 @@ module.exports = {
   map,
   filter,
   reduce,
-  apply,
+  encase,
   debug,
   recover,
 }
