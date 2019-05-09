@@ -1,5 +1,5 @@
 {
-  "name": "basefp",
+  "name": "simplefp",
   "version": "0.0.1",
   "description": "Function composition without hassle!",
   "main": "index.js",
@@ -17,9 +17,9 @@
   "author": "Dimitri Tarasowski",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tarasowski/basefp/issues"
+    "url": "https://github.com/tarasowski/simplefp/issues"
   },
-  "homepage": "https://github.com/tarasowski/basefp#readme",
+  "homepage": "https://github.com/tarasowski/simplefp#readme",
   "devDependencies": {
     "riteway": "^6.0.3"
   }
