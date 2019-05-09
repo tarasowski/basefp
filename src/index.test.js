@@ -10,7 +10,7 @@ const user = {
 describe("pipe()", async assert =>
   assert({
     given: "an object with an array of cities", 
-    should: "it should not error out",
+    should: "it should not error out and return a value",
     actual: pipe([
       apply ("San Francisco") (x => x.cities[5]),
       map (x => x.toUpperCase()),

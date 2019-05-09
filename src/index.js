@@ -1,4 +1,3 @@
-//https://medium.com/javascript-inside/effective-data-validation-in-javascript-5c2f3e75249e
 const { apply } = require("./apply.js")
 const asyncPipe = fns => x => fns.reduce(async (v, f) => f(await v), x)
 const pipe = fns => x => fns.reduce((v, f) => f(v), x)
