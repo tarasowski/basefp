@@ -21,7 +21,7 @@
     "url": "https://github.com/tarasowski/compose.js/issues"
   },
   "homepage": "https://github.com/tarasowski/compose.js#readme",
-  "dependencies": {
+  "devDependencies": {
     "riteway": "^6.0.3"
   }
 }
