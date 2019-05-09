@@ -8,15 +8,15 @@ Inspired by https://medium.com/javascript-inside/effective-data-validation-in-ja
 
 ```js
 module.exports = {
-  asyncPipe,
-  pipe,
-  compose,
-  map,
-  filter,
-  reduce,
-  encase,
-  debug,
-  recover,
+  asyncPipe,  // asyncPipe  :: F (Promise -> Promise) -> a -> Promise a Error
+  pipe,       // pipe       :: Foldable f => f (Any -> Any) -> a -> b
+  compose,    // compose    :: (b -> c) -> (a -> b) -> (a -> c)
+  map,        // map        :: Functor f => (a -> b) -> f a -> f b
+  filter,     // filter     :: Filterable f => (a -> Boolean) -> f a -> f a
+  reduce,     // reduce     :: Foldable f => (b, a -> b) -> b -> f a -> b
+  encase,     // encase     :: DefaultValue -> (a -> b) -> DefaultValue || b
+  debug,      // debug      ::  a -> IO a
+  recover,    // recover    :: DefaultValue -> a -> DefaultValue || a
 }
 ```
 
