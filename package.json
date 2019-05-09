@@ -1,0 +1,27 @@
+{
+  "name": "compose.js",
+  "version": "1.0.0",
+  "description": "Function composition without hassle!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarasowski/compose.js.git"
+  },
+  "keywords": [
+    "functional",
+    "programming",
+    "composition"
+  ],
+  "author": "Dimitri Tarasowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarasowski/compose.js/issues"
+  },
+  "homepage": "https://github.com/tarasowski/compose.js#readme",
+  "dependencies": {
+    "riteway": "^6.0.3"
+  }
+}
