@@ -14,7 +14,7 @@ describe("pipe()", async assert =>
     actual: pipe([
       apply ("San Francisco") (x => x.cities[5]),
       map (x => x.toUpperCase()),
-      apply ("D") (str => str.charAt(0)),
+      apply ("B") (str => str.charAt(0)),
       recover ("Nothing")
     ]) (user),
     expected: "S"

@@ -20,7 +20,6 @@ module.exports = {
   asyncPipe,
   pipe,
   compose,
-  filter,
   map,
   filter,
   reduce,
