@@ -1,5 +1,5 @@
 # basefp
-## Function composition without hassle!
+## For those who want to stay small and nimble
 Inspired by https://medium.com/javascript-inside/effective-data-validation-in-javascript-5c2f3e75249e
 
 
