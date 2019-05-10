@@ -1,5 +1,5 @@
 const {describe} = require("riteway")
-const {pipe, map, filter, reduce, encase, debug, recover} = require("./index.js")
+const {log, pipe, map, filter, reduce, encase, debug, recover} = require("./index.js")
 
 const user = {
   name: "Dimitri",

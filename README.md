@@ -15,7 +15,7 @@ module.exports = {
   filter,     // filter     :: Filterable f => (a -> Boolean) -> f a -> f a
   reduce,     // reduce     :: Foldable f => (b, a -> b) -> b -> f a -> b
   encase,     // encase     :: DefaultValue -> (a -> b) -> DefaultValue || b
-  debug,      // debug      :: a -> IO a
+  log,        // log        :: a -> IO a
   recover,    // recover    :: DefaultValue -> a -> DefaultValue || a
 }
 ```
