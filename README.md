@@ -8,7 +8,7 @@ Inspired by https://medium.com/javascript-inside/effective-data-validation-in-ja
 
 ```js
 module.exports = {
-  asyncPipe,  // asyncPipe  :: Foldable f => f (Promise -> Promise) -> a -> Promise a Error
+  asyncPipe,  // asyncPipe  :: Foldable f => f (Promise -> Promise) -> Promise -> Promise a Error
   pipe,       // pipe       :: Foldable f => f (Any -> Any) -> a -> b
   compose,    // compose    :: (b -> c) -> (a -> b) -> (a -> c)
   map,        // map        :: Functor f => (a -> b) -> f a -> f b
