@@ -1,8 +1,8 @@
 {
   "name": "basefp",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "The hassle-free way to apply functional programming principles in JavaScript",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "node ./src/index.test.js"
   },
